@@ -70,7 +70,7 @@
 #TCL - files
 !*.tcl
 #Journal - files
-!*.jou
+*.jou
 #Reports
 !*.rpt
 !*.txt
@@ -117,3 +117,4 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 src_edit_by_vscode/
+!README.md

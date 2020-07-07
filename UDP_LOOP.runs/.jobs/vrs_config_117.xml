@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="CRC32_D8_AAL5_synth_1" LaunchDir="E:/UDP_LOOP/UDP_LOOP.runs/CRC32_D8_AAL5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ipsend_synth_1" LaunchDir="E:/UDP_LOOP/UDP_LOOP.runs/ipsend_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/UDP_LOOP/UDP_LOOP.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="CRC32_D8_AAL5_synth_1"/>
+		<Parent Id="ipsend_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/UDP_LOOP/UDP_LOOP.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="CRC32_D8_AAL5_synth_1"/>
+		<Parent Id="ipsend_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

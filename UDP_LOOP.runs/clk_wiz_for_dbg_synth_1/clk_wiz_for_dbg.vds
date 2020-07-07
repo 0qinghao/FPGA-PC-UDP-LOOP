@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug 16 04:02:15 2019
+# Process ID: 15560
+# Current directory: E:/UDP_LOOP/UDP_LOOP.runs/clk_wiz_for_dbg_synth_1
+# Command line: vivado.exe -log clk_wiz_for_dbg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_for_dbg.tcl
+# Log file: E:/UDP_LOOP/UDP_LOOP.runs/clk_wiz_for_dbg_synth_1/clk_wiz_for_dbg.vds
+# Journal file: E:/UDP_LOOP/UDP_LOOP.runs/clk_wiz_for_dbg_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_for_dbg.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_for_dbg, cache-ID = 97c8c6201edd30e8.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 04:02:25 2019...

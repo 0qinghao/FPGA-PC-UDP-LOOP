@@ -1,0 +1,98 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Aug 16 08:46:09 2019
+| Host         : B523-Win10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RGMII_UDP_TEST_control_sets_placed.rpt
+| Design       : RGMII_UDP_TEST
+| Device       : xc7z035
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      4 |            3 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            1 |
+|      9 |            2 |
+|     15 |            1 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |             252 |           76 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             127 |           36 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                        Enable Signal                       |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-----------------------------------------+------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 |                                                            |                                                  |                1 |              1 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/data_counter[15]_i_2_n_0           |                                                  |                1 |              1 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/state_counter[4]_i_2_n_0           |                                                  |                1 |              1 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_90  |                                                            |                                                  |                1 |              1 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/FSM_sequential_rx_state[3]_i_2_n_0 | udp_inst/ipreceive_inst/SR[0]                    |                1 |              4 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/state_counter[4]_i_2_n_0           | udp_inst/ipreceive_inst/state_counter[4]_i_1_n_0 |                1 |              4 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/check_buffer[19]_i_1_n_0              |                                                  |                2 |              4 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/j[4]_i_1_n_0                          |                                                  |                3 |              5 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   |                                                            |                                                  |                4 |              7 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/dataout[7]_i_1_n_0                    |                                                  |                8 |              8 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/i[4]_i_1_n_0                          |                                                  |                7 |              9 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/ram_rd_addr[8]_i_2_n_0                | udp_inst/ipsend_inst/tx_data_counter             |                2 |              9 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/data_counter[15]_i_2_n_0           | udp_inst/ipreceive_inst/data_counter[15]_i_1_n_0 |                4 |             15 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/IP_layer[143]_i_1_n_0              |                                                  |                3 |             16 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/rx_data_length[15]_i_1_n_0         |                                                  |                4 |             16 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/rx_total_length[15]_i_1_n_0        |                                                  |                3 |             16 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/tx_data_counter[0]_i_1_n_0            | udp_inst/ipsend_inst/tx_data_counter             |                4 |             16 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/check_buffer[15]_i_1_n_0              |                                                  |                5 |             16 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/ip_header[2][15]_i_1_n_0              | udp_inst/ipsend_inst/ip_header[6][31]_i_1_n_0    |                6 |             16 |
+|  CLK_50MHZ_i_IBUF_BUFG                  | udp_inst/ipreceive_inst/SR[0]                              |                                                  |                7 |             24 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/myUDP_layer[23]_i_1_n_0            |                                                  |                5 |             24 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/myIP_layer[135]_i_1_n_0            |                                                  |                4 |             24 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/tx_data_counter                       | udp_inst/ipsend_inst/time_counter[31]_i_1_n_0    |                8 |             31 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   |                                                            | udp_inst/crc32_oldcrc_tx[31]_i_1_n_0             |                9 |             32 |
+| ~u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/crcen                                 | udp_inst/CRC32_D8_AAL5_TX/p_0_in                 |               10 |             32 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_0   | udp_inst/ipsend_inst/ip_header[6][31]_i_1_n_0              |                                                  |               15 |             48 |
+|  u_clk_wiz_tran_rxclk/inst/clk_125M_180 | udp_inst/ipreceive_inst/mymac[87]_i_1_n_0                  |                                                  |                8 |             56 |
++-----------------------------------------+------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,532 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug 16 08:44:07 2019
+# Process ID: 9544
+# Current directory: E:/UDP_LOOP/UDP_LOOP.runs/synth_1
+# Command line: vivado.exe -log RGMII_UDP_TEST.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGMII_UDP_TEST.tcl
+# Log file: E:/UDP_LOOP/UDP_LOOP.runs/synth_1/RGMII_UDP_TEST.vds
+# Journal file: E:/UDP_LOOP/UDP_LOOP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RGMII_UDP_TEST.tcl -notrace
+Command: synth_design -top RGMII_UDP_TEST -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2408 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 401.004 ; gain = 104.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RGMII_UDP_TEST' [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_tran_rxclk' [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/clk_wiz_tran_rxclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_tran_rxclk' (1#1) [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/clk_wiz_tran_rxclk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/rgmii_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDDR_2CLK' [C:/Users/Rin/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22415]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_CB_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR_2CLK' (2#1) [C:/Users/Rin/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22415]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (3#1) [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/rgmii_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/rgmii_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Users/Rin/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (4#1) [C:/Users/Rin/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (5#1) [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/rgmii_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'udp' [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/udp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ipsend' [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/ipsend_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ipsend' (6#1) [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/ipsend_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CRC32_D8_AAL5' [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/CRC32_D8_AAL5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CRC32_D8_AAL5' (7#1) [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/CRC32_D8_AAL5_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ipreceive' [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:1]
+	Parameter card_mac bound to: 48'b000000000000101000110101000000000000000100000010 
+	Parameter idle bound to: 4'b0000 
+	Parameter six_55 bound to: 4'b0001 
+	Parameter spd_d5 bound to: 4'b0010 
+	Parameter rx_mac bound to: 4'b0011 
+	Parameter rx_IP_Protocol bound to: 4'b0100 
+	Parameter rx_IP_layer bound to: 4'b0101 
+	Parameter rx_UDP_layer bound to: 4'b0110 
+	Parameter rx_data bound to: 4'b0111 
+	Parameter rx_finish bound to: 4'b1000 
+WARNING: [Synth 8-3848] Net mydata_num in module/entity ipreceive does not have driver. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ipreceive' (8#1) [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (9#1) [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/udp.v:1]
+WARNING: [Synth 8-350] instance 'udp_inst' of module 'udp' requires 22 connections, but only 21 given [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:118]
+INFO: [Synth 8-6157] synthesizing module 'ram' [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (10#1) [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/.Xil/Vivado-9544-B523-Win10/realtime/ram_stub.v:6]
+WARNING: [Synth 8-3848] Net ram_wren_ts in module/entity RGMII_UDP_TEST does not have driver. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:145]
+WARNING: [Synth 8-3848] Net ram_wr_finish in module/entity RGMII_UDP_TEST does not have driver. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:151]
+WARNING: [Synth 8-3848] Net ram_addr_ts in module/entity RGMII_UDP_TEST does not have driver. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:146]
+WARNING: [Synth 8-3848] Net ram_data_ts in module/entity RGMII_UDP_TEST does not have driver. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_UDP_TEST' (11#1) [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ethernet_test_top.v:1]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[15]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[14]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[13]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[12]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[11]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[10]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[9]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[8]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[7]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[6]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[5]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[4]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[3]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[2]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[1]
+WARNING: [Synth 8-3331] design ipreceive has unconnected port mydata_num[0]
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port si5338_scl
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port si5338_sda
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port clk0_p
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port clk0_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 457.383 ; gain = 161.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 457.383 ; gain = 161.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 457.383 ; gain = 161.148
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/CRC32_D8_AAL5_synth_1/CRC32_D8_AAL5/CRC32_D8_AAL5_in_context.xdc] for cell 'udp_inst/CRC32_D8_AAL5_TX'
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/CRC32_D8_AAL5_synth_1/CRC32_D8_AAL5/CRC32_D8_AAL5_in_context.xdc] for cell 'udp_inst/CRC32_D8_AAL5_TX'
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/ipsend_synth_1/ipsend/ipsend_in_context.xdc] for cell 'udp_inst/ipsend_inst'
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/ipsend_synth_1/ipsend/ipsend_in_context.xdc] for cell 'udp_inst/ipsend_inst'
+Parsing XDC File [e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_inst'
+Finished Parsing XDC File [e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'ram_inst'
+Parsing XDC File [e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk_in_context.xdc] for cell 'u_clk_wiz_tran_rxclk'
+Finished Parsing XDC File [e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk_in_context.xdc] for cell 'u_clk_wiz_tran_rxclk'
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/udp.xdc]
+WARNING: [Constraints 18-619] A clock with name 'rgmii_rxclk_i' already exists, overwriting the previous clock with the same name. [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/udp.xdc:6]
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/udp.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/udp.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RGMII_UDP_TEST_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RGMII_UDP_TEST_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/si5338_xdc.xdc]
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/si5338_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/new/si5338_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RGMII_UDP_TEST_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RGMII_UDP_TEST_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/imports/new/false_path_from_timing_report.xdc]
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.srcs/constrs_1/imports/new/false_path_from_timing_report.xdc]
+Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/UDP_LOOP/UDP_LOOP.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.934 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.941 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 891.941 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ram_inst' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rxclk_i. (constraint file  e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rxclk_i. (constraint file  e:/UDP_LOOP/UDP_LOOP.srcs/sources_1/ip/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk/clk_wiz_tran_rxclk_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for ram_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_clk_wiz_tran_rxclk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'mymac_reg' and it is trimmed from '96' to '88' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:101]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myIP_Prtcl_reg' and it is trimmed from '16' to '8' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:125]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myIP_layer_reg' and it is trimmed from '160' to '152' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:147]
+WARNING: [Synth 8-3936] Found unconnected internal register 'myUDP_layer_reg' and it is trimmed from '64' to '56' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:171]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'ipreceive'
+INFO: [Synth 8-5546] ROM "rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data_receive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_total_length" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                  six_55 |                             0001 |                             0001
+                  spd_d5 |                             0010 |                             0010
+                  rx_mac |                             0011 |                             0011
+          rx_IP_Protocol |                             0100 |                             0100
+             rx_IP_layer |                             0101 |                             0101
+            rx_UDP_layer |                             0110 |                             0110
+                 rx_data |                             0111 |                             0111
+               rx_finish |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'ipreceive'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	              152 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   9 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RGMII_UDP_TEST 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ipreceive 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	              152 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   9 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 21    
+Module udp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'udp_inst/ipreceive_inst/myUDP_layer_reg' and it is trimmed from '56' to '48' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:171]
+WARNING: [Synth 8-3936] Found unconnected internal register 'udp_inst/ipreceive_inst/IP_layer_reg' and it is trimmed from '160' to '144' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:152]
+WARNING: [Synth 8-3936] Found unconnected internal register 'udp_inst/ipreceive_inst/myIP_layer_reg' and it is trimmed from '152' to '144' bits. [E:/UDP_LOOP/UDP_LOOP.srcs/sources_1/imports/src_edit_by_vscode/ipreceive.v:147]
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port si5338_scl
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port si5338_sda
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port clk0_p
+WARNING: [Synth 8-3331] design RGMII_UDP_TEST has unconnected port clk0_n
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_tran_rxclk/clk_125M_0' to pin 'u_clk_wiz_tran_rxclk/bbstub_clk_125M_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_tran_rxclk/clk_125M_180' to pin 'u_clk_wiz_tran_rxclk/bbstub_clk_125M_180/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_tran_rxclk/clk_125M_270' to pin 'u_clk_wiz_tran_rxclk/bbstub_clk_125M_270/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_tran_rxclk/clk_125M_90' to pin 'u_clk_wiz_tran_rxclk/bbstub_clk_125M_90/O'
+WARNING: [Synth 8-565] redefining clock 'rgmii_rxclk_i'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 891.941 ; gain = 595.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 894.512 ; gain = 598.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|RGMII_UDP_TEST | udp_inst/ipreceive_inst/mymac_reg[47]       | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|RGMII_UDP_TEST | udp_inst/ipreceive_inst/myIP_layer_reg[127] | 16     | 8     | NO           | NO                 | YES               | 8      | 0       | 
++---------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_wiz_tran_rxclk |         1|
+|2     |ram                |         1|
+|3     |ipsend             |         1|
+|4     |CRC32_D8_AAL5      |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |CRC32_D8_AAL5      |     1|
+|2     |clk_wiz_tran_rxclk |     1|
+|3     |ipsend             |     1|
+|4     |ram                |     1|
+|5     |BUFG               |     1|
+|6     |CARRY4             |    17|
+|7     |IDDR_2CLK          |     5|
+|8     |LUT1               |    49|
+|9     |LUT2               |    38|
+|10    |LUT3               |     3|
+|11    |LUT4               |    10|
+|12    |LUT5               |    15|
+|13    |LUT6               |    29|
+|14    |ODDR               |     4|
+|15    |SRL16E             |    16|
+|16    |FDRE               |   187|
+|17    |FDSE               |    32|
+|18    |IBUF               |     6|
+|19    |OBUF               |     7|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+-------------------+----------+------+
+|      |Instance           |Module    |Cells |
++------+-------------------+----------+------+
+|1     |top                |          |   545|
+|2     |  rgmii_rx_0       |rgmii_rx  |    12|
+|3     |  rgmii_tx_0       |rgmii_tx  |     4|
+|4     |  udp_inst         |udp       |   447|
+|5     |    ipreceive_inst |ipreceive |   292|
++------+-------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 896.145 ; gain = 165.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 896.145 ; gain = 599.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 905.828 ; gain = 617.434
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.828 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/UDP_LOOP/UDP_LOOP.runs/synth_1/RGMII_UDP_TEST.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGMII_UDP_TEST_utilization_synth.rpt -pb RGMII_UDP_TEST_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 08:44:45 2019...
